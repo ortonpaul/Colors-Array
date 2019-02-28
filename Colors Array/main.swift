@@ -6,12 +6,26 @@ import Foundation
 
 var colors: [String] = ["red", "orange", "yellow", "pink"]
 
-print(colors)
-
-colors.remove(at: 3)
-
-print(colors)
+colors.remove(at: colors.count - 1)
 
 colors.append("green")
 
-print(colors)
+let numColors = colors.count
+
+print("number of colors = \(numColors)")
+
+print("colors:")
+
+for color in colors {
+    print(color)
+}
+
+let moreColors: [String] = ["blue", "purple"]
+
+var allColors: [String] = colors + moreColors
+
+print("all colors:")
+
+for color in allColors {
+    print(color)
+}
